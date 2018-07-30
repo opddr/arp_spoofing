@@ -45,7 +45,7 @@ int main(int argc, char *argv[])
 	scanf("%x-%x-%x-%x-%x-%x",&buf[0],&buf[1],&buf[2],&buf[3],&buf[4],&buf[5]);
 
 	getmac(buf+6);
-	printf("Attackermac : %#1x-%#1x-%#1x-%#1x-%#1x-%#1x\n",buf[6],buf[7],buf[8],buf[9],buf[10],buf[11]);
+	//printf("Attackermac : %#1x-%#1x-%#1x-%#1x-%#1x-%#1x\n",buf[6],buf[7],buf[8],buf[9],buf[10],buf[11]);
 	buf[12]=0x08;
 	buf[13]=0x06;
 
@@ -66,7 +66,7 @@ int main(int argc, char *argv[])
 	buf[21]=0x02;
 	//sender MAC
 	getmac(buf+22);
-	printf("Attacker mac:%#1x-%#1x-%#1x-%#1x-%#1x-%#1x\n",buf[22],buf[23],buf[24],buf[25],buf[26],buf[27]);
+	//printf("Attacker mac:%#1x-%#1x-%#1x-%#1x-%#1x-%#1x\n",buf[22],buf[23],buf[24],buf[25],buf[26],buf[27]);
 	
 	//sender IP
 	printf("gateway ip : ");
